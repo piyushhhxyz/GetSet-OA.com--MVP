@@ -1,0 +1,119 @@
+.body-company {
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 1) 10%,
+            rgba(152, 3, 249, 1) 81%);
+    background-color: black;
+    height: 100vh;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+    padding-bottom: 30px;
+}
+
+.company-name-heading {
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards-container {
+    max-width: 95vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    place-items: center;
+    /* padding: 20px; */
+    /* gap: 10px; */
+    row-gap: 20px;
+    columns: 15px;
+}
+
+.company-card {
+    background-color: hsla(0, 0%, 100%, .2);
+    border: 1px solid hsla(0, 0%, 100%, .1);
+    cursor: pointer;
+    padding: 20px;
+    transition: all .3s ease-in-out;
+    width: min(440px , 90%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-top: 30px;
+    border-radius: 30px;
+    /* border: 3px solid #000000b9; */
+    box-shadow: #000000d6 10px 11px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* .company-card::after {
+    content: "";
+    position: absolute;
+    top: -81px;
+    right: -87px;
+    width: 151px;
+    height: 143px;
+    border-radius: 74px;
+    background-color: red;
+    transition: all 0.3s ease-in-out;
+} */
+
+.circle {
+    height: 128px;
+    width: 128px;
+    background-color: #000000;
+
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+
+    border-radius: 50%;
+
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.company-card:hover {
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* transform: translateY(-5px); */
+    /* scale: 1.03; */
+    transition: 0.2s;
+    /* box-shadow: #0000009d 2px 2px 9px 1px; */
+    /* transform: translate(10px); */
+    z-index: 10;
+}
+
+.company-card:hover .circle {
+    -webkit-transform: scale(15);
+    -ms-transform: scale(15);
+    transform: scale(15);
+}
+
+.college-name {
+    color: #eee;
+    z-index: 1;
+}
+
+.info {
+    color: #ccc;
+    z-index: 1;
+}
+
+@media screen and (max-width : 480px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .company-name-heading {
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 0;
+    }
+}

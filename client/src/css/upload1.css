@@ -1,0 +1,272 @@
+.body-1 {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(https://img.freepik.com/premium-vector/futuristic-background-retro-style-digital-grid-landscape-80s-vector-background-party_658411-424.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.upload-form-container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 10px;
+  width: min(100%, 600px);
+  height: min-content;
+  margin: 5rem auto;
+  text-align: center;
+  /* background-color: #f7f7f7; */
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 2px solid red; */
+}
+
+.authMessage1 {
+  font-size: 30px;
+  color: #d815b4;
+  margin-bottom: 10px;
+  word-spacing: -2px;
+}
+
+.authM1 {
+  font-size: 20px;
+  color: #d1baef;
+  margin-bottom: 20px;
+}
+
+.upload_auth-form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.authFlex1 {
+  display: flex;
+  /* flex-direction: column; */
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user1,
+.password1 {
+  margin-bottom: 10px;
+}
+
+.usernameInput1 {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  background-color: #65567d;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.usernameInput1::placeholder {
+  color: #fff;
+}
+
+.btn1 {
+  background-color: #d815b4;
+  width: min-content;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* without auth style */
+.uploadOptions {
+  display: flex;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/premium-vector/futuristic-background-retro-style-digital-grid-landscape-80s-vector-background-party_658411-424.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  width: min(90%, 1200px);
+  height: max(60%, 300px);
+}
+
+.grid-item {
+  /* background-color: #eee; */
+  /* padding: 20px; */
+
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: black 1px 2px 25px;
+}
+
+.grid-item:nth-child(1) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.grid-item:nth-child(2) {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.grid-item:nth-child(3) {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.grid-item:nth-child(4) {
+  grid-row: 2 / span 2;
+  grid-column: 3 / span 2;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.uploadGif {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardTitle,
+.cardTitleoff,
+.cardTitleres {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.signUpload {
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent 8px,
+      #17c3ee 8px,
+      #17c3ee 18px,
+      transparent 18px
+    ),
+    linear-gradient(to right, #17c3ee, #304ffe),
+    radial-gradient(
+      circle at 0% 100%,
+      transparent 8px,
+      #304ffe 8px,
+      #304ffe 18px,
+      transparent 18px
+    ),
+    linear-gradient(to bottom, #304ffe, #8a00bd),
+    radial-gradient(
+      circle at 0% 0%,
+      transparent 8px,
+      #8a00bd 8px,
+      #8a00bd 18px,
+      transparent 18px
+    ),
+    linear-gradient(to left, #8a00bd, #00aaff),
+    radial-gradient(
+      circle at 100% 0%,
+      transparent 8px,
+      #00aaff 8px,
+      #00aaff 18px,
+      transparent 18px
+    ),
+    linear-gradient(to top, #00aaff, #17c3ee);
+  background-size: 18px 18px, calc(100% - 36px) 10px, 18px 18px,
+    10px calc(100% - 36px);
+  background-position: top left, top center, top right, center right,
+    bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.493);
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+}
+
+.signup {
+  font-size: 55px;
+  font-weight: 800;
+  color: #3caae6;
+  background-image: -webkit-linear-gradient(
+    135deg,
+    #3caae6 16%,
+    #8f05ff 51%,
+    #f5f5ff 100%
+  );
+  background: #ae11bf;
+  background: linear-gradient(to right, #ae11bf 29%, #690cc7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+  .signup {
+    font-size: 25px;
+  }
+
+  .grid-parent {
+    gap: 4px;
+    height: 40%;
+    width: 95%;
+  }
+
+  .cardTitle,
+  .cardTitleoff,
+  .cardTitleres {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .authFlex1 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .body-1 {
+    display: grid;
+    place-items: center;
+  }
+  .upload-form-container1 {
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .upload_auth-form1 {
+    align-items: center;
+    width: 100%;
+  }
+
+  .authFlex1 {
+    width: 100%;
+  }
+
+  .user1,
+  .password1 {
+    width: 100%;
+  }
+}

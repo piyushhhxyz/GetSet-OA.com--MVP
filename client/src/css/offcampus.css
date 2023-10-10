@@ -1,0 +1,120 @@
+/*  Giving the necessary color codes and gradients */
+
+/* .offcampusCardWrapper {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+/* .offcampusDataDiv {
+    color: rgba(255, 255, 255, 0.872);
+    text-align: center;
+} */
+
+
+.body1 {
+ background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(152, 3, 249, 1) 81%
+  );
+  background-color: black;
+  height: 100vh;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+}
+
+.card-container {
+    /* margin-top: 8vh; */
+    max-width: 80rem;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fill,330px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+
+  .card {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 364px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    /* border: 2px solid black; */
+  }
+
+  .offcampusCardWrapper:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    scale: 1.03;
+    transition: 0.2s;
+}
+
+  .card-image {
+    margin-top: 1rem;
+    height: 266px;
+    width: 298px;
+    border-radius: 50px;
+    /* width: 70%; */
+    /* border-radius: 10px 0 0 10px; */
+    /* overflow: hidden; */
+  }
+
+  .card-details {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.872);
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  .card-inner-detail {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+
+ @media screen and (max-width : 380px) {
+
+  .card-container {
+    /* margin-top: 8vh; */
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fill,276px);
+    row-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 276px;
+    height: 276px;
+  }
+
+  .card-image {
+    margin-top: 0.8rem;
+    height: 175px;
+    width: 252px;
+    border-radius: 34px;
+    /* width: 70%; */
+    /* border-radius: 10px 0 0 10px; */
+    /* overflow: hidden; */
+  }
+
+
+  .card-inner-detail {
+    font-size: 1rem;
+  }
+
+ }
+
+

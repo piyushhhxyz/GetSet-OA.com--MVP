@@ -1,0 +1,285 @@
+.body {
+    background: linear-gradient(180deg, hsla(304, 96%, 9%, 1) 0%, hsla(297, 100%, 49%, 1) 100%);
+    font-size: 16px;
+    height: 100vh;
+
+}
+.google-btn-text{
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins, sans-serif;
+}
+
+#root {
+    width: 100%;
+    font-size: 16px;
+    height: 100vh;
+}
+
+.login-nav {
+    background-color: transparent;
+}
+
+.loginTop {
+    width: 100%;
+}
+
+.inline {
+    font-size: 1rem;
+    height: 65px;
+    padding: 1rem;
+}
+
+.appLogo1 {
+    aspect-ratio: 1/1;
+    width: 65px;
+    margin-right: 5px;
+}
+
+
+.name1 {
+    color: whitesmoke;
+    display: inline;
+    margin-right: 6px;
+
+}
+
+.nameGr1 {
+    background: -webkit-linear-gradient(180deg,
+            #9e0094 0%,
+            hsla(297, 100%, 49%, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    font-weight: 800;
+
+}
+
+
+.player-login {
+    margin: 3rem auto 2rem auto !important;
+    height: 24rem !important;
+}
+
+.btnDiv {
+    margin: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 3rem;
+}
+
+
+.googleBtn,
+.gitBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 1.5rem 2.2rem;
+    font-size: 1rem;
+    height: 40px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    border: none;
+}
+
+
+.gitBtn {
+    color: #fff;
+    background-color: black;
+}
+
+.googleBtn {
+    background: whitesmoke;
+    color: black;
+}
+
+.github-icon {
+    width: 20px;
+    aspect-ratio: 1/1;
+    filter: invert(1);
+}
+
+@media screen and (max-width : 1440px) {
+
+
+
+    .player-login {
+        width: 36rem !important;
+        height: 36rem !important;
+        margin-top: 4rem;
+    }
+
+    /* both login buttons  */
+    .googleBtn,
+    .gitBtn {
+        width: 32vh;
+        padding: 1.8rem 0;
+        font-size: 2.3vh;
+    }
+
+    .googleBtn img,
+    .gitBtn img {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-right: 5px;
+    }
+
+    .btnDiv {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 580px) {
+    .appLogo1 {
+        aspect-ratio: 1/1;
+        width: 60px;
+        margin-right: 5px;
+    }
+
+    #lottie {
+        width: 24rem !important;
+        height: 24rem !important;
+        margin-top: 4rem;
+    }
+
+    .btnDiv {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 3rem;
+        gap: 1.2rem;
+    }
+
+    .googleBtn,
+    .gitBtn {
+        gap: 17px;
+        border-radius: 12px;
+        padding: 2rem 1rem;
+        font-size: 1.5rem;
+        height: 40px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        width: 75vw;
+        place-self: center;
+    }
+
+    .googleBtn img,
+    .gitBtn img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .name1,
+    .nameGr1 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        font-size: 7vw;
+    }
+
+
+    .login-nav {
+        margin: 0;
+        margin-bottom: 4rem;
+    }
+
+
+    .player-login {
+        margin: 0.5rem !important;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 380px) {
+    .logo-small {
+        /* border: 1px solid red; */
+        padding-top: 3px;
+    }
+
+    .appLogo1 {
+        padding-top: 1px;
+    }
+
+    #lottie {
+        width: 22rem !important;
+        height: 22rem !important;
+        margin-top: 4rem;
+    }
+
+    .googleBtn,
+    .gitBtn {
+        padding: 1.5rem 0.5rem;
+        gap: 12px;
+        border-radius: 12px;
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+        height: 50px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+    }
+
+    .google-btn-text,
+    .git-btn-text {
+        font-weight: 700;
+    }
+
+    nav {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .btnDiv {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 2.2rem;
+        gap: 1.5rem;
+
+    }
+
+    .googleBtn img,
+    .gitBtn img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}
+
+@media screen and (max-width : 320px) {
+
+    .player-login {
+        width: 18rem !important;
+        height: 18rem !important;
+        margin-top: 4rem;
+    }
+
+    .login-nav {
+        margin: 0;
+    }
+
+    .googleBtn,
+    .gitBtn {
+        gap: 17px;
+        border-radius: 15px;
+        padding: 1rem 1rem;
+        font-size: 1.2rem;
+        height: 40px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+    }
+
+    .appLogo1 {
+        aspect-ratio: 1/1;
+        width: 55px;
+    }
+
+}

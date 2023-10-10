@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #000;
+  font-size: 16px;
+}
+
+#root {
+  width: 100%;
+  font-size: 16px;
+}
+
+.landing-navbar {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1.3rem 0 0rem;
+}
+
+/* logo container */
+.logo-small {
+  font-size: clamp(1.6vw, 18px, 100%);
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.6px;
+}
+
+#from2 {
+  display: none;
+}
+
+/* logo img */
+.appLogo {
+  aspect-ratio: 1/1;
+  width: 65px;
+  margin-right: 5px;
+}
+
+/* logo text "Get" */
+.name {
+  color: whitesmoke;
+  display: inline;
+  margin-right: 6px;
+  line-height: 70px;
+
+}
+
+.nameGr {
+  background: -webkit-linear-gradient(180deg,
+      #9e0094 0%,
+      hsla(297, 100%, 49%, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+  font-weight: 800;
+}
+
+
+/* black div all texts */
+.wrapper {
+  padding-left: 7.5vw;
+  padding-top: 4rem;
+
+}
+
+.blackDiv {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+}
+
+/* wraper > all-text-wrapper */
+.all-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  row-gap: 1vh;
+}
+
+#typewriter2 {
+  display: none;
+}
+
+.typeWriter {
+  width: 100%;
+  display: block;
+}
+
+.typeWriterH2 {
+  background: linear-gradient(to right, #ae11bf 29%, #690cc7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  all bigger text screen big */
+.big {
+  display: inline;
+  margin-right: 8px;
+  line-height: 60px;
+  font-size: clamp(4.2vw, 42px, 100%);
+  font-weight: 800;
+}
+
+.small {
+  display: inline;
+  font-size: 2.3vw;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  margin-right: 3px;
+}
+
+.tier {
+  background: #ae11bf;
+  background: linear-gradient(to right, #ae11bf 29%, #690cc7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ques {
+  background: #d608bb;
+  background: linear-gradient(to right, #d608bb 14%, #70075b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.from,
+.across {
+  margin-right: 5px;
+}
+
+.bottom {
+  margin-right: 5px;
+}
+
+.startBtn {
+  margin: auto;
+  background-color: #000;
+  border-radius: 10px;
+  background-image: linear-gradient(to right,
+      #da22ff 0%,
+      #9733ee 100%);
+  color: #000;
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+  margin-top: 13vh;
+  margin-left: 8vw;
+}
+
+.registerBtn,
+.startBtn {
+  border: none;
+  letter-spacing: 0.5px;
+  border-radius: 18px;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.2rem;
+  width: 250px;
+  font-weight: 700;
+}
+
+/* navbar register button */
+.registerBtn {
+  background-color: #000;
+  border-radius: 12px;
+  color: #fff;
+  z-index: 100;
+  padding: 1rem 0;
+  width : 220px;
+  margin-top: 1.5rem;
+}
+
+/* purple div  big screen */
+.purpleDiv {
+  position: absolute;
+  right: 10px;
+  top: 1vh;
+  border-radius: 40px 0px 40px 0px;
+  flex: 1;
+  background: rgb(199, 0, 175);
+  background: linear-gradient(180deg,
+      rgba(199, 0, 175, 1) 25%,
+      rgba(82, 4, 124, 1) 66%);
+  height: 98vh;
+  overflow: hidden;
+}
+@media screen and (max-width : 1260px) {
+  
+}
+.lf-player-container {
+  margin-top: 4rem;
+}
+.landing-player {
+  padding-top: 3rem;
+  width: 650px !important;
+}
+
+@media screen and (max-width : 1260px) {
+  .lf-player-container {
+    margin-top: 0rem;
+  }
+
+  /* 1*/
+  .landing-player {
+    width: 550px !important;
+
+  }
+}
+
+@media screen and (max-width : 1024px) {
+  .landing-player {
+    width: 100vw !important;
+    margin: 0;
+
+
+  }
+
+  #from1 {
+    display: inline;
+  }
+
+  #from2 {
+    display: none;
+  }
+
+  .purpleDiv {
+    display: block;
+    padding: 0;
+    position: relative;
+    width: 94vw;
+    top: auto;
+    right: auto;
+    border-radius: 40px;
+    height: 90vh;
+    z-index: -1;
+
+  }
+
+  /*  */
+  .purpleDiv #lottie {
+    height: 100vh;
+  }
+
+  .purpleDiv {
+    border-radius: 30px;
+  }
+
+
+  .getText {
+    display: block;
+    font-size: 1.3rem;
+  }
+
+  .blackDiv {
+    order: 2;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .all-text-wrapper {
+    padding: 0.2rem 1rem;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: clamp(1.3rem, 1.5rem);
+    gap: 0;
+  }
+
+  .inline-text {
+    width: clamp(450px, 500px);
+  }
+
+  #typewriter1 {
+    width: 750px;
+  }
+
+  .big {
+    font-size: 6vw;
+    font-weight: 800;
+    line-height: 90px;
+  }
+
+  .small {
+    display: inline;
+    font-size: 1.8rem;
+  }
+
+  .registerBtn {
+    display: none;
+
+  }
+
+  .startBtn {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    margin-top: 2vh;
+    font-weight: 800;
+    font-size: 1.1rem;
+    place-self: center;
+
+  }
+
+  nav {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width : 760px) {
+  .appLogo {
+    aspect-ratio: 1/1;
+    width: 60px;
+  }
+
+  .getText {
+    color: #000;
+  }
+
+  .name {
+    font-weight: 800;
+    font-size: 7vw;
+  }
+
+  .nameGr {
+    font-weight: 900;
+    font-size: 7vw;
+  }
+
+  #typewriter1 {
+
+    display: none;
+  }
+
+  #typewriter2 {
+    width: 300px;
+    display: block;
+    height: 100%;
+    position: absolute;
+    color: #000;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+
+  .typeWriterH2 {
+    background: #0F0117;
+    background: linear-gradient(to left, #0f0117bb 30%, rgb(0, 0, 0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 13vw;
+    display: block;
+  }
+
+  /* to change height of the purple dive for mobile devic */
+  .purpleDiv #lottie {
+    height: calc(100vh - (160px + rem)) !important;
+  }
+
+
+  .purpleDiv {
+    padding-top: 6rem;
+    border-radius: 30px;
+  }
+
+  .big {
+    font-size: 11vw;
+    font-weight: 900;
+    line-height: 60px;
+  }
+
+  .small {
+    display: inline;
+    font-size: 1.3rem;
+  }
+}

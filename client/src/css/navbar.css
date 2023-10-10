@@ -1,0 +1,261 @@
+a {
+    text-decoration: none;
+}
+
+
+.offcampus-navbar {
+    padding-top: 10px;
+    display: flex;
+    position: sticky;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    background: transparent;
+    background: linear-gradient(180deg, hsla(300, 100%, 0%, 1) 0%, hsla(277, 100%, 7%, 1) 100%);
+    z-index: 999;
+}
+
+/* logo container */
+.logo-small-offcampus {
+    height: fit-content;
+    font-size: clamp(1.6vw, 18px, 100%);
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+    letter-spacing: 0.6px;
+}
+
+
+.logo-nameGr {
+    -webkit-text-fill-color: transparent;
+    background: #dd16f2;
+    background: linear-gradient(to bottom right, #dd16f2 11%, #610bb8);
+    -webkit-background-clip: text;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+    gap: 8px;
+}
+
+/* centered container */
+.navlinkDiv {
+    width: 480px;
+    background-color: rgba(255, 144, 240, 0.171);
+    height: 60px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 7px;
+    margin-right: 50px;
+}
+
+.navlinkDiv a {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 9rem;
+    padding: 0rem;
+    margin: 0;
+    /* border-radius: 15px; */
+     border-radius: 15px;
+    padding: 0.4rem 0rem;
+}
+.nav-first {
+margin-left: 8px !important;
+}
+.nav-last {
+    margin-right: 8px !important;
+}
+
+.user-info {
+    height: fit-content;
+    align-self: center;
+    margin-top: -12px;
+}
+
+.username,
+.username-small {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.username {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.logout-button-small {
+    width: 180px;
+
+}
+
+.avatar {
+    display: grid;
+    aspect-ratio: 1/1;
+    width: 60px;
+    border-radius: 999px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+.logout-button,
+.logout-button-small {
+    background-color: #f44336;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+.active {
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.582);
+    color: black !important;
+}
+
+.user-info-small {
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: rgba(255, 144, 240, 0.171);
+    background-color: #2d012a;
+    box-shadow: rgba(31, 31, 31, 0.767) -1px 1px 10px 1px;
+    backdrop-filter: blur(5px);
+    width: 205px;
+    right: 20px;
+
+}
+
+
+@media screen and (max-width : 660px) {
+
+    .offcampus-navbar {
+        margin-bottom: 20px;
+        padding: 0;
+        padding-bottom: 65px;
+        /* background: linear-gradient(180deg, hsla(300, 100%, 0%, 1) 0%, #25013d 100%); */
+    }
+
+    .navlinkDiv {
+        position: absolute;
+        /* bottom: -83px; */
+        top: 64px;
+        margin: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 93vw;
+        max-width: 400px;
+        height: fit-content;
+        justify-content: center;
+        padding: 5px 0;
+        z-index: 10;
+    }
+
+    .navlinkDiv a {
+        font-size: calc(0.8rem - 1px);
+        font-size: calc(0.8rem);
+    }
+
+
+    .navbar-applogo,
+    .applogo1 {
+        width: 57px;
+    }
+
+    .logo-small-offcampus {
+        height: fit-content;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        margin-top: -2px;
+        letter-spacing: 0.6px;
+        align-self: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-name,
+    .logo-nameGr {
+        font-size: 1.6rem;
+    }
+
+    .list {
+        margin: 0;
+        gap: 0;
+    }
+
+    .user-info {
+        margin: 0;
+        padding: 0;
+    }
+
+    .avatar {
+        width: 45px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .user-info-small {
+        width: auto;
+        top: 50px;
+        right: 0;
+        left: -100px;
+    }
+
+    .username-small {
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .logout-button-small {
+        width: 110px;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .username,
+    .logout-button {
+        display: none;
+    }
+
+    .show-small {
+        display: block !important;
+    }
+}
+
+.hidden {
+    display: none;
+}
