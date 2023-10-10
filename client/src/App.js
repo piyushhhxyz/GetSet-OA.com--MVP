@@ -16,6 +16,12 @@ export default function App() {
 
   React.useEffect(() => {
     const getUser = () => {
+      const defaultUser = {
+        photos: [{ value: "https://imgs.search.brave.com/j686vGnRcZM-FcFB2g27KUgS-h7i9Qd5vVGjjAEd36c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS84WDF5WHhtZG8y/QVFKQmJESzVTalQ5/WVVvXzdSZ21leXdL/cGVTQy1KbUIwaDhM/a24tQXZaV1dxNW1E/TXIxQWxOaXliND13/MjAyLWgzNjAtcnc.jpeg" }],
+        displayName: "GtXrR.007",
+      };
+    
+      setUser(defaultUser); //immediaitely value daal di:
       fetch("https://getsetoa-api.vercel.app/auth/login/success", {
         method: "GET",
         credentials: "include",
