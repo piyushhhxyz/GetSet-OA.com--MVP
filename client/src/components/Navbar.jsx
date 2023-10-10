@@ -1,17 +1,29 @@
+import React, { useEffect } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "../css/navbar.css";
 
 export default function Navbar({ user }) {
-    const logout = () => {
-        window.open("https://getsetoa-api.vercel.app/auth/logout", "_self");
-    };
-    let navigator = useNavigate();
+    const navigate = useNavigate();
+    const logout = () => {window.open("http://localhost:4000/auth/logout", "_self")};
     
+    useEffect(() => {
+        const handleKeyPress = (event) => {
+          if (event.key === "u" && event.metaKey && event.shiftKey) {
+            navigate("/upload");
+          }
+        };
+    
+        document.addEventListener("keydown", handleKeyPress);
+        return () => {
+          document.removeEventListener("keydown", handleKeyPress);
+        };
+      }, [navigate]);
+
     const toggleMenu = () => {
         const menu = document.getElementById("menu-small");
         menu.classList.toggle("hidden");
     };
-    console.log(user.photos[0].value);
+
     return (
         <nav className="offcampus-navbar">
             <Link
