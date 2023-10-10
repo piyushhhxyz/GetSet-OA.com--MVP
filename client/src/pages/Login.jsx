@@ -7,10 +7,10 @@ import githubLogo from "../githubLoginImage.png";
 import { Link } from "react-router-dom";
 export default function Login() {
     const google = () => {
-        window.open("http://localhost:4000/auth/google", "_self");
+        window.open("https://getsetoa-api.vercel.app/auth/google", "_self");
     };
     const github = () => {
-        window.open("http://localhost:4000/auth/github", "_self");
+        window.open("https://getsetoa-api.vercel.app/auth/github", "_self");
     };
 
     return (

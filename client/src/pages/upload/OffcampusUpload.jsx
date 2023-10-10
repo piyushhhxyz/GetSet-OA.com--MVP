@@ -40,7 +40,7 @@ export default function Oaupload() {
 
   const uploadData = async (base64EncodedImage) => {
     try {
-      const response = await fetch("http://localhost:4000/api/v1/upload", {
+      const response = await fetch("https://getsetoa-api.vercel.app/api/v1/upload", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

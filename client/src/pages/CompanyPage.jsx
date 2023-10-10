@@ -17,7 +17,7 @@ export default function CompanyDetails({ user }) {
   const fetchCompanyDetails = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4000/api/v1/getData/${companyName}`
+        `https://getsetoa-api.vercel.app/api/v1/getData/${companyName}`
       );
       console.log(response);
       setCompanyDetails(response.data);

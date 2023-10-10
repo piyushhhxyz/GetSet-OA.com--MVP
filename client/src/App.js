@@ -16,7 +16,7 @@ export default function App() {
 
   React.useEffect(() => {
     const getUser = () => {
-      fetch("http://localhost:4000/auth/login/success", {
+      fetch("https://getsetoa-api.vercel.app/auth/login/success", {
         method: "GET",
         credentials: "include",
         headers: {

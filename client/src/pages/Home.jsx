@@ -14,7 +14,7 @@ export default function Home({ user }) {
       const getUniqueCompanies = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:4000/api/v1/getData/unique-companies"
+            "https://getsetoa-api.vercel.app/api/v1/getData/unique-companies"
           );
           // console.log(response.data);
           setUniqueCompanies(response.data);
@@ -24,7 +24,7 @@ export default function Home({ user }) {
       };
 
       const logout = () => {
-        window.open("http://localhost:4000/auth/logout", "_self");
+        window.open("https://getsetoa-api.vercel.app/auth/logout", "_self");
       };
 
     // useEffect(() => {
