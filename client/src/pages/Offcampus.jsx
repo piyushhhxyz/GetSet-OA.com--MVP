@@ -1,20 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar.jsx";
 import "../css/offcampus.css"
-// import Offloader from "../components/Offloader";
+import Offloader from "../components/Offloader";
 export default function Offcampus({ user }) {
     const [isLoading, setIsLoading] = useState(true);
     const [offCampData, setOffCampData] = useState([
-        // {
-        //     company: "BNY Mellon",
-        //     imgurl: "assets/BNY office.jpeg",
-        //     url: "www.bnymellon.com/us/en/careers/students/internship-program.html",
-        //     Eligibility: "2024",
-        //     location: "California",
-        //     stipend: "Rs 75,000/-pm",
-        //     role: "SWE Intern",
-        //     note: "Only Females Candidates",
-        // },
         {
             company: "Netflix",
             imgurl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRry-jqpffMP5nxpDgEFrObcEgwMI8TvElV7DuTTkVrA&s",
@@ -265,7 +255,6 @@ export default function Offcampus({ user }) {
 
     let offCampComp = offCampData.map((data, i) => {
         return (
-            // added key 
             <a href={`https://${data.url}`} key={i}>
                 <div className="offcampusCardWrapper card">
                     <img
@@ -291,8 +280,7 @@ export default function Offcampus({ user }) {
             <Navbar user={user} />
             <div className="for-scroll">
             <div className="offcampusWrapper card-container">
-                {/* {isLoading ? <Offloader></Offloader> : offCampComp} */}
-                {offCampComp}
+                {isLoading ? <Offloader></Offloader> : offCampComp}
             </div>
             </div>
         </div>

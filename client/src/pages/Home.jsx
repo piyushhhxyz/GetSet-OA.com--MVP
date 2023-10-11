@@ -27,15 +27,8 @@ export default function Home({ user }) {
         window.open("https://getsetoa-api.vercel.app/auth/logout", "_self");
       };
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setIsLoading(false);
-    //     }, 700);
-    // }, []);
-
     let cards = uniqueCompanies.map((company, index) => {
         return (
-            // added key
             <Link
                 to={`/Home/${company._id}`}
                 key={index}>
@@ -48,10 +41,6 @@ export default function Home({ user }) {
                         <h3 className="offcampusName1 card-inner-detail1">
                         {company._id.toUpperCase()}
                         </h3>
-                        {/* <h3 className="role card-inner-detail">Role : {data.role}</h3>
-                        <h3 className="roleName card-inner-detail">
-                            Eligible Batch : {data.Eligibility}
-                        </h3> */}
                     </div>
                 </div>
             </Link>
