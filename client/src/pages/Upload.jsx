@@ -32,7 +32,7 @@ export default function Upload({ user }) {
   };
 
  
-  if (!isAuthenticated) {
+  if (isAuthenticated) {
     return (
       <div className="body-1">
       <div className="upload-form-container1">

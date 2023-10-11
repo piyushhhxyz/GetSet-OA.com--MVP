@@ -270,3 +270,9 @@
     opacity: 0;
   }
 }
+
+@media screen and (max-width:580px) {
+  .loaderMessage{
+    padding: 0 1rem;
+  }
+}

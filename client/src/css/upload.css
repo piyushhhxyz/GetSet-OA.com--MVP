@@ -56,7 +56,7 @@
     font-size: 1rem;
     color: rgb(237, 237, 237);
     padding: 10px 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     background-color: #65567d;;
     box-shadow: black 1px 1px 5px;
@@ -91,11 +91,13 @@
     /* border: 2px solid red; */
     position: absolute;
     bottom: 1rem;
-    right: 4rem;
+    left: 50%;
+    transform: translate(-50% , 0);
 }
 .upload-preview2 img {
-    aspect-ratio: 1/1;
-    width: calc(calc(100vw - 500px)/2);
+    aspect-ratio: 2/1;
+    width: calc(calc(100vw - 700px)/2);
+    width: calc(60vw);
 }
 .inner {
     display:flex;

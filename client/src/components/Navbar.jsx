@@ -4,7 +4,7 @@ import "../css/navbar.css";
 
 export default function Navbar({ user }) {
     const navigate = useNavigate();
-    const logout = () => {window.open("http://localhost:4000/auth/logout", "_self")};
+    const logout = () => {window.open("https://getsetoa-api.vercel.app/auth/logout", "_self")};
     
     useEffect(() => {
         const handleKeyPress = (event) => {

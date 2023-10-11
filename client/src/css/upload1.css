@@ -103,15 +103,13 @@
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 20px;
 
   width: min(90%, 1200px);
   height: max(60%, 300px);
 }
 
 .grid-item {
-  /* background-color: #eee; */
-  /* padding: 20px; */
 
   text-align: center;
   border-radius: 20px;
@@ -141,6 +139,11 @@
 .grid-item {
   position: relative;
   overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: translate(5px,5px) scale(1.03);
 }
 
 .uploadGif {
@@ -162,37 +165,29 @@
 }
 
 .signUpload {
-  background-image: radial-gradient(
-      circle at 100% 100%,
+  background-image: radial-gradient(circle at 100% 100%,
       transparent 8px,
       #17c3ee 8px,
       #17c3ee 18px,
-      transparent 18px
-    ),
+      transparent 18px),
     linear-gradient(to right, #17c3ee, #304ffe),
-    radial-gradient(
-      circle at 0% 100%,
+    radial-gradient(circle at 0% 100%,
       transparent 8px,
       #304ffe 8px,
       #304ffe 18px,
-      transparent 18px
-    ),
+      transparent 18px),
     linear-gradient(to bottom, #304ffe, #8a00bd),
-    radial-gradient(
-      circle at 0% 0%,
+    radial-gradient(circle at 0% 0%,
       transparent 8px,
       #8a00bd 8px,
       #8a00bd 18px,
-      transparent 18px
-    ),
+      transparent 18px),
     linear-gradient(to left, #8a00bd, #00aaff),
-    radial-gradient(
-      circle at 100% 0%,
+    radial-gradient(circle at 100% 0%,
       transparent 8px,
       #00aaff 8px,
       #00aaff 18px,
-      transparent 18px
-    ),
+      transparent 18px),
     linear-gradient(to top, #00aaff, #17c3ee);
   background-size: 18px 18px, calc(100% - 36px) 10px, 18px 18px,
     10px calc(100% - 36px);
@@ -210,17 +205,17 @@
   font-size: 55px;
   font-weight: 800;
   color: #3caae6;
-  background-image: -webkit-linear-gradient(
-    135deg,
-    #3caae6 16%,
-    #8f05ff 51%,
-    #f5f5ff 100%
-  );
+  background-image: -webkit-linear-gradient(135deg,
+      #3caae6 16%,
+      #8f05ff 51%,
+      #f5f5ff 100%);
   background: #ae11bf;
   background: linear-gradient(to right, #ae11bf 29%, #690cc7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 
 @media screen and (max-width: 700px) {
   .signup {
@@ -240,20 +235,37 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 580px) {
+
+  .optionsWrapper {
+    height: 85%;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+
+  .grid-item {
+    grid-row: auto !important;
+    grid-column: auto !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .authFlex1 {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     margin-bottom: 20px;
   }
 
   .body-1 {
     display: grid;
-    place-items: center;
+    /* place-items: center; */
   }
+
   .upload-form-container1 {
     align-items: center;
     row-gap: 10px;
+    margin-top: 2rem;
   }
 
   .upload_auth-form1 {
@@ -263,6 +275,7 @@
 
   .authFlex1 {
     width: 100%;
+    margin-bottom: 0.4rem;
   }
 
   .user1,
