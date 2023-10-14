@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-const CLIENT_URL = "https://getsetoa.tech";
+const CLIENT_URL = "https://www.getsetoa.tech' ";
 
 router.get("/login/success", (req, res) => {
   if (req.user) {
@@ -30,7 +30,7 @@ router.get("/google", passport.authenticate("google", { scope: ["profile"] }));
 router.get(
   "/google/callback",
   passport.authenticate("google", {
-    successRedirect: "https://getsetoa.tech/home",
+    successRedirect: "https://www.getsetoa.tech/home",
     failureRedirect: "/login/failed",
   })
 );
@@ -39,7 +39,7 @@ router.get("/github", passport.authenticate("github", { scope: ["profile"] }));
 router.get(
   "/github/callback",
   passport.authenticate("github", {
-    successRedirect: "https://getsetoa.tech/home",
+    successRedirect: "https://www.getsetoa.tech/home",
     failureRedirect: "/login/failed",
   })
 );

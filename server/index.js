@@ -34,7 +34,7 @@ app.use(
 
 app.use(
   cors({
-    origin: "https://getsetoa.tech",
+    origin: "https://www.getsetoa.tech",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
