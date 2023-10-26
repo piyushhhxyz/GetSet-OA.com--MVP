@@ -31,14 +31,6 @@ app.use(
   })
 );
 
-// app.use(
-//   cors({
-//     origin: "https://www.getsetoa.tech",
-//     methods: "GET,POST,PUT,DELETE",
-//     credentials: true,
-//   })
-// );
-
 app.use(cors());
 
 app.use("/auth", authRoute);
